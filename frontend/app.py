@@ -39,9 +39,10 @@ if st.button("Generate Travel Plan"):
         try:
 
             response = requests.post(
-                "http://127.0.0.1:8000/plan",
+                "http://ai-railway-assistant.railway.internal/plan",
                 json=payload
             )
+
 
             result = response.json()
 
